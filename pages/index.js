@@ -2,7 +2,7 @@ import Head from "next/head";
 import {
     AiFillTwitterCircle,
     AiFillLinkedin,
-    AiFillYoutube,
+    AiFillInstagram,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -78,9 +78,19 @@ export default function Home() {
                             the latest web development technologies.
                         </p>
                         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-                            <AiFillTwitterCircle />
-                            <AiFillLinkedin />
-                            <AiFillYoutube />
+                            <Link href={`https://twitter.com/fluidmercury`}>
+                                <AiFillTwitterCircle />
+                            </Link>
+                            <Link
+                                href={`https://www.linkedin.com/in/advait-suresh-5108a1237/`}
+                            >
+                                <AiFillLinkedin />
+                            </Link>
+                            <Link
+                                href={`https://www.instagram.com/____advait__/`}
+                            >
+                                <AiFillInstagram />
+                            </Link>
                         </div>
                         <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
                             <Image
